@@ -2,9 +2,9 @@
 # interview_problems
 
 ## recursion_problems:
-#### Combination Sum I:
-#### Combination Sum II:
-#### Print all palindromic partitions:
+### Combination Sum I:
+### Combination Sum II:
+### Print all palindromic partitions:
 
     static boolean pal(String str) {
         int len = str.length();
