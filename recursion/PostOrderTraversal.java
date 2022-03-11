@@ -12,7 +12,9 @@
  *         this.right = right;
  *     }
  * }
- * @see : https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
+ * @see : 
+ *      question: https://leetcode.com/problems/binary-tree-postorder-traversal/
+ *      solution: https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
  * @author : subham-santra
  */
 class Solution {
