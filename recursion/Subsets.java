@@ -18,3 +18,26 @@ public class Solution {
       new Solution().subsets(nums);
     }
 }
+
+//***** USING BITMASKING
+class AnotherSolution {
+    public List<List<Integer>> subsets(int[] nums) {
+        int LIMIT = (1 << nums.length);
+        List<List<Integer>> ans = new ArrayList<>();
+        
+        for (int mask = 0; mask < LIMIT; ++mask) {
+            int tmp = mask;
+            List<Integer> ll = new ArrayList<>();
+            int x = 0;
+            while (tmp > 0) {
+                if ((tmp & 1) == 1)
+                    ll.add(nums[x]);
+                tmp >>= 1;
+                ++x;
+            }
+            ans.add(ll);
+        }
+        
+        return ans;
+    }
+}
