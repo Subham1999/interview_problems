@@ -1,5 +1,5 @@
 /**
-** @see : <a href="https://leetcode.com/problems/pascals-triangle/>click here</a>
+** @see : <a href="https://leetcode.com/problems/pascals-triangle/">click here</a>
 */
 class Solution {
     public List<List<Integer>> generate(int numRows) {
