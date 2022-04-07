@@ -14,14 +14,14 @@ public class NumberOfRecentCalls {
             currentTime = t;
 
             // now remove older requests
-            while (!timestamp.isEmpty() && isOlder(timestamp.getFirst(), currentTime)) {
+            while (!timestamp.isEmpty() && isOlder(timestamp.getFirst())) {
                 timestamp.removeFirst();
             }
 
             return timestamp.size();
         }
 
-        private boolean isOlder(int olderTime, int currentTime) {
+        private boolean isOlder(int olderTime) {
             return olderTime < (currentTime - TTW);
         }
     }
